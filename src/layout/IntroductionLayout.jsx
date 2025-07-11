@@ -1,10 +1,13 @@
 import "./../assets/styles/Introduction.css";
+import profile_picture from "./../assets/images/pfp.png";
+import mouse_down from "./../assets/images/mouse-down.png";
+
 export default function WelcomeLayout() {
   return (
     <main>
       <div className="intro-container">
         <div className="profile-picture">
-          <img src="src/assets/images/pfp.png" alt="Profile Avatar" />
+          <img src={profile_picture} alt="Profile Avatar" />
         </div>
 
         <div className="introduction-text">
@@ -25,7 +28,7 @@ export default function WelcomeLayout() {
 
       <div className="mouse-down">
         <img
-          src="src/assets/images/mouse-down.png"
+          src={mouse_down}
           alt="mouse-down"
           height="64"
         />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./NavBar.css"; // Link your CSS here
+import logo_image from "../../assets/icons/RF - Black.ico"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div className="nav-container">
         <div className="nav-logo fade-in-nav">
           <div className="logo-image logo-circles">
-            <img src="src/assets/icons/RF - Black.ico" alt="Logo" />
+            <img src={logo_image} alt="RF Logo" />
           </div>
 
           <div className="logo-circles">
