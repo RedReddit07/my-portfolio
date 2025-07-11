@@ -2,6 +2,7 @@ import "./../assets/styles/Introduction.css";
 import profile_picture from "./../assets/images/pfp.png";
 import mouse_down from "./../assets/images/mouse-down.png";
 
+import pdf_file from "./../context/RESUME_REYNOLD_FERCOL.pdf";
 export default function WelcomeLayout() {
   return (
     <main>
@@ -19,7 +20,7 @@ export default function WelcomeLayout() {
             </div>
             
             <p><q>Solving Complex Problems, One Line of Code at a Time.</q></p>
-            <a href="src/context/RESUME_REYNOLD_FERCOL.pdf" download="">
+            <a href={pdf_file} target="_blank" rel="noopener noreferrer">
               <button className="intro-button">Download CV</button>
             </a>
            

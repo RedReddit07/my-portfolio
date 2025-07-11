@@ -40,7 +40,7 @@ export default function Project(){
       description:
         "An ERP (Enterprise Resource Planning) system integrate planning, purchasing inventory, finance and human resources.",
       imageUrl: ERP,
-      projectLink: "erp.aseanbiodiversity.org",
+      projectLink: "https://erp.aseanbiodiversity.org",
       githubLink: "",
       companyName: "Across Media IT Solutions",
       companyLogo: across_media_logo,
