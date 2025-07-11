@@ -1,5 +1,5 @@
 import Navbar from '/src/components/navbar/NavBar';
-import Introduction from '/src/layout/introductionLayout';
+import Introduction from '/src/layout/IntroductionLayout';
 import Wave from '/src/components/wave/Wave';
 import Project from '/src/layout/ProjectLayout';
 import TechStack from '/src/layout/TechStackLayout';
