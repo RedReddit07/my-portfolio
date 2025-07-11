@@ -1,0 +1,171 @@
+@import "../../main.css";
+
+/* .intro-container{
+    border: 3px dashed red;
+}
+.intro-container *{
+    border: 2px dashed blue;
+}
+
+.introduction-text *{
+   border: 1px dashed green;
+} */
+
+.intro-container{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container .profile-picture{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+
+}
+.intro-container .profile-picture img{
+    object-fit: contain;
+    height: auto;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4);
+}
+
+
+.introduction-text{
+    font-weight: "Inter", sans-serif;
+    flex: 3;
+}
+
+.introduction-text h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    background-color: var(--text-background-color);
+    border-radius: 6px;
+    padding: 3px 8px;
+    max-width: fit-content;
+}
+
+.text-title{
+    display: flex;
+    justify-content: center;
+    align-items:self-end;
+
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.introduction-text h1{
+    flex: 3;
+    font-size: 82px;
+    font-weight: 800;
+    color: var(--second-span-color);
+    max-width: fit-content;
+}   
+
+.introduction-text h1 span{
+    color: var(--span-color);
+}
+
+#countryname{
+    flex: 1;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--span-color);
+    text-transform: uppercase;
+    max-height: max-content;
+}
+
+.introduction-text p{
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-button{
+    color: #FFFFFF;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: var(--button-color);
+    /* border-radius: 8px; */
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: "Roboto";
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4);
+    border: 0;
+}
+
+.intro-button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.intro-button:hover{
+    background-color: var(--hover-button-color);
+}
+
+/* M O U S E */
+.mouse-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro-container{
+        flex-direction: column;
+        margin-inline: 1em;
+    }
+    .intro-container .profile-picture img{
+        height: 200px;
+        width: auto;
+    }
+
+    .text-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .introduction-text h1{
+        font-size: 2.5em;
+        line-height: 2rem;
+    }
+
+    .introduction-text h2{
+        font-size:10px;
+        line-height: 3em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    #countryname{
+        font-size: 9px;
+    }
+
+    .introduction-text p{
+        font-size: 12px;
+        margin:0;
+    }
+
+    .intro-button{
+        /* width: 100%; */
+        text-align: center;
+        font-size: 12px;
+        margin: 2rem 0;
+    }
+
+    .mouse-down{
+        display: none;
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../main.css';
+
+.footer {
+  background-color: var(--background-color-dmode);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+.back-to-top {
+  background-color: var(--secondary-color);
+  color: var(--header-color);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.back-to-top:hover {
+  background: #eee;
+  color: var(--primary-color);
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #aaa;
+}

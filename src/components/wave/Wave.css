@@ -1,0 +1,89 @@
+/* W A V E */
+
+.wave-svg{
+    margin-top: -130px;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.wave-svg .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../../assets/images/wave-d.png") repeat-x;
+    background-size: 1000px 100px;
+}
+
+/* W A V E  A N I M A T I O N */
+
+.wave-svg .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave-svg .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave-svg .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.wave-svg .wave.wave4{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wave-svg{
+        height: 20vh;
+    }
+    .wave-svg .wave{
+        height: 50px;
+        background-size: 500px 50px;
+    }
+    .wave-svg .wave.wave1,
+    .wave-svg .wave.wave2,
+    .wave-svg .wave.wave3,
+    .wave-svg .wave.wave4{
+        bottom: 0;
+    }
+    
+}

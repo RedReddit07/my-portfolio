@@ -1,0 +1,214 @@
+@import "../../main.css";
+
+/* NAV ANIMATIONS */
+.fade-in-nav {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#circle1 {
+  animation: c1 1.5s;
+}
+
+#circle2 {
+  animation: c2 1.5s;
+}
+
+#circle3 {
+  animation: c3 1.5s;
+}
+
+#circle4 {
+  animation: c4 1.5s;
+}
+
+@keyframes c1 {
+  from {
+    position: absolute;
+    left: 100px;
+  }
+  to {
+    left: 0;
+    position: absolute;
+  }
+}
+
+@keyframes c2 {
+  from {
+    position: absolute;
+    left: 200px;
+  }
+  to {
+    left: 32px;
+    position: absolute;
+  }
+}
+
+@keyframes c3 {
+  from {
+    position: absolute;
+    left: 300px;
+  }
+  to {
+    left: 62px;
+    position: absolute;
+  }
+}
+
+@keyframes c4 {
+  from {
+    position: absolute;
+    left: 400px;
+  }
+  to {
+    left: 92px;
+    position: absolute;
+  }
+}
+
+/* ================ */
+
+.nav-container {
+  display: flex;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.logo-circles > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+#circle1 {
+  background: var(--primary-color);
+}
+
+#circle2 {
+  background: var(--secondary-color);
+}
+
+#circle3 {
+  background: var(--tertiary-color);
+}
+
+#circle4 {
+  background: var(--fourth-color);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-headers ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover{
+  border-bottom: 3px solid var(--secondary-color);
+  transition: all 0.1s ease-in-out;
+}
+
+/* ============================== */
+
+/* Hamburger style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .nav-headers {
+    border: 1px solid red;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-headers.open {
+    display: flex;
+    max-width: max-content;
+  }
+
+  .nav-headers ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
