@@ -8,6 +8,7 @@ import dbtc_logo from "./../assets/logo/DBTC.jpg";
 
 import EMS from "./../assets/images/EMS.png";
 import ERP from "./../assets/images/ACB.png";
+import ACBJP from "./../assets/images/ACBJP.png";
 import TFOE from "./../assets/images/TFOE.png";
 import GMS from "./../assets/images/GMS.png";
 import RUTGERS from "./../assets/images/RUTGERS.png";
@@ -52,6 +53,26 @@ export default function Project(){
         "CodeIgniter",
         "MDB",
         "MySQL",
+      ],
+    },
+    {
+      title: "Asean Centre for Biodiversity JOB Portal",
+      description:
+        "A web application for managing job postings, applications, and candidate profiles.",
+      imageUrl: ACBJP,
+      projectLink: "",
+      githubLink: "",
+      companyName: "Across Media IT Solutions",
+      companyLogo: across_media_logo,
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "CodeIgniter",
+        "MDB",
+        "MySQL",
+        "Gmail API"
       ],
     },
     {
