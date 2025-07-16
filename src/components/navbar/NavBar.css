@@ -87,6 +87,7 @@
   height: 50px;
   width: auto;
   object-fit: contain;
+  margin-right: 2rem;
 }
 
 .logo-circles {
@@ -101,7 +102,6 @@
 .logo-circles > div {
   height: 15px;
   width: 15px;
-  border-radius: 50%;
 }
 
 #circle1 {

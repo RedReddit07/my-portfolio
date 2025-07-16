@@ -13,6 +13,8 @@ import TFOE from "./../assets/images/TFOE.png";
 import GMS from "./../assets/images/GMS.png";
 import RUTGERS from "./../assets/images/RUTGERS.png";
 import SF1 from "./../assets/images/SF1.png";
+import MPP from "./../assets/images/MPP.png";
+import rf_logo from "./../assets/icons/RF - Black.ico";
 
 export default function Project(){
   const projects = [
@@ -100,7 +102,7 @@ export default function Project(){
         "An online web application for Sorsogon Pilot Elementary Teachers to manage their class grades and report cards.",
       imageUrl: GMS,
       projectLink: "",
-      githubLink: "",
+      githubLink: "https://github.com/RedReddit07/grades-management-system",
       companyName: "Computer Communication Development Institute",
       companyLogo: ccdi_logo,
       techStack: ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "MySQL"],
@@ -125,6 +127,16 @@ export default function Project(){
       companyName: "Data Base Technology College",
       companyLogo: dbtc_logo,
       techStack: ["VB.NET", "MSAccess"],
+    },
+    {
+      title: "My Personal Portfolio",
+      description: "A personal portfolio website to showcase my projects and skills.",
+      imageUrl: MPP,
+      projectLink: "",
+      githubLink: "https://github.com/RedReddit07/my-portfolio",
+      companyName: "My Portfolio",
+      companyLogo: rf_logo,
+      techStack: ["HTML", "CSS", "ReactJS"],
     },
   ];
 

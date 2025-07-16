@@ -25,7 +25,7 @@
   height:50px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  box-shadow: 0 6px 9px rgba(110, 110, 110, 0.1);
+  /* box-shadow: 0 6px 9px rgba(110, 110, 110, 0.1); */
 }
 
 .tech-item:hover {
